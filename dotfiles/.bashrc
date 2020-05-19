@@ -16,7 +16,8 @@ backup-dots () {
     echo "Backing up..."
     crontab -l > ~/.config/crontab
     (
-        shallow-backup -no-splash -backup-dots -separate-dotfiles-repo
+#        shallow-backup -no-splash -backup-dots -separate-dotfiles-repo
+        shallow-backup -no-splash -backup-all -separate-dotfiles-repo
         cd "$HOME/shallow-backup/dotfiles/" || exit
         git add .
         commit_msg="$1"
