@@ -52,6 +52,16 @@ client_loop: send disconnect: Broken pipe
   Hi liuzel01! You've successfully authenticated, but GitHub does not provide shell access.
   ```
   
-  
 
-2. 
+2. **问题描述：**
+
+- ArchLinux 使用终端st时，无法使用Delete键位删除字符
+
+- **解决办法：**
+
+  - `sudo vim /etc/inputrc` ，在$endif之上添加内容
+  ```shell
+  #for delete 
+  #"\e[P": delete-char
+  set enable-keypad on 
+  ```
