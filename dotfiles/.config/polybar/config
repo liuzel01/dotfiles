@@ -63,9 +63,12 @@ module-margin-left = 1
 module-margin-right = 1
 
 ; font-0 = ypn envypn:size=10;0
-font-2 = Monaco:size=12;0
-font-1 = FontAwesome:size=12;0
-font-3 = WenQuanYi Mirco Hei:size=12;-1
+#font-1 = FontAwesome:size=12;0
+font-1 = Font Awesome 5 Free:style=Regular:pixelsize=12;0
+font-2 = Font Awesome 5 Free:style=Solid:pixelsize=12;0
+font-3 = Font Awesome 5 Brands:pixelsize=12;0
+; font-2 = Monaco:size=12;0
+; font-3 = WenQuanYi Mirco Hei:size=12;-1
 font-4 = Google Sans:size=12;0
 font-5 = Source Code Pro for Powerline:size=12;0
 font-6 = DejaVu Serif Condensed:size=12;0

@@ -17,6 +17,7 @@
 - 此仓库是使用[shallow-backup](https://github.com/alichtman/shallow-backup)备份的，仓库内文件大部分为配置文件，可供参考
 - `backup-dots -m  "add i3+polybar+compton"`,also you can `shallow-backup --help` to find other instructions
   - of course, can change the script `backup-dots` in ~/.bashrc
+  - `shallow-backup -show`  
 
 ---
 
@@ -65,3 +66,9 @@ client_loop: send disconnect: Broken pipe
   #"\e[P": delete-char
   set enable-keypad on 
   ```
+
+3. **问题描述：**
+   - archlinux使用polybar时，图标Font Awesome一直无法显示。偶然见，在[polybar-issue](https://github.com/polybar/polybar/issues/924)发现线索了
+   - `fc-list | grep -i awesome`   查看支持的字体  
+   -  ~/.config/polybar/config  大约在67行，继续进行修改  
+   - 
