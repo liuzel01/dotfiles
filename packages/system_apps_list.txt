@@ -2,6 +2,7 @@ assistant-qt4.desktop
 avahi-discover.desktop
 bssh.desktop
 bvnc.desktop
+charm.desktop
 compton.desktop
 designer-qt4.desktop
 fcitx-configtool.desktop
@@ -17,9 +18,11 @@ gtk3-widget-factory.desktop
 i3.desktop
 linguist-qt4.desktop
 mimeinfo.cache
+pycharm-professional.desktop
 qdbusviewer-qt4.desktop
 qtconfig-qt4.desktop
 qv4l2.desktop
 qvidcap.desktop
 terminator.desktop
+typora.desktop
 vim.desktop
