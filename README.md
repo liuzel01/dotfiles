@@ -5,7 +5,8 @@
   - spf13-vim,lazygit
 - 这个仓库记录了ArchLinux期间，使用的软件和相关配置。其中一些是借鉴的网络上大牛的。
   - 使用环境：ArchLinux,i3wm,polybar,compton,st(simple terminal),rofi,zsh&[ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-  - zsh辅助使用插件，[autojump](https://github.com/wting/autojump) 
+    - 还怪好看的,通过ln -s将文件链接到 ~/.config/zsh/再进行备份
+- zsh辅助使用插件，[autojump](https://github.com/wting/autojump) 
 
 # WHY
 

@@ -4,10 +4,8 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
-alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
-
+# 为适应zsh，注释掉
+# PS1='[\u@\h \W]\$ '
 export PATH=$PATH:$HOME/.local/bin/
 
 #a bash script used for shallow-backup
@@ -38,5 +36,5 @@ backup-dots () {
     )
 }
 ################################################################################
-alias ll='ls -l'
+alias ll='ls -l --color=auto'
 alias grep='grep --color=auto'
