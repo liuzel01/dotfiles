@@ -1,10 +1,11 @@
 # WHAT
 
 - This repo is about the dotfiles of the software and related configuration used during ArchLinux, including some learned from the famous ones on the githubers.  
-- Software used:ArchLinux,i3wm,polybar,compton,st(simple terminal),rofi
+- Software used:ArchLinux,i3wm,polybar,compton,st(simple terminal),rofi,zsh&ohmyzsh
   - spf13-vim,lazygit
 - 这个仓库记录了ArchLinux期间，使用的软件和相关配置。其中一些是借鉴的网络上大牛的。
-  - 使用环境：ArchLinux,i3wm,polybar,compton,st(simple terminal),rofi
+  - 使用环境：ArchLinux,i3wm,polybar,compton,st(simple terminal),rofi,zsh&[ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+  - zsh辅助使用插件，[autojump](https://github.com/wting/autojump) 
 
 # WHY
 
