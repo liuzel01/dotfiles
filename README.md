@@ -71,6 +71,7 @@ client_loop: send disconnect: Broken pipe
   #"\e[P": delete-char
   set enable-keypad on 
   ```
+  - 或是修改 ~/.zshrc 的配置，如下
 - **相关参考：**
 
   - [使用zsh后重新映射键值](https://blog.csdn.net/gatieme/article/details/104170950)，[problem with home,end and del under zsh](https://bbs.archlinux.org/viewtopic.php?pid=201942#p201942)
