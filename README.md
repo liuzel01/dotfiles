@@ -1,30 +1,30 @@
 # WHAT
 
-- This repo is about the dotfiles of the software and related configuration used during ArchLinux, including some learned from the famous ones on the githubers.  
-- Software used:ArchLinux,i3wm,polybar,compton,st(simple terminal),rofi,zsh&ohmyzsh
-  - spf13-vim,lazygit
-- 这个仓库记录了ArchLinux期间，使用的软件和相关配置。其中一些是借鉴的网络上大牛的。
-  - 使用环境：ArchLinux,i3wm,polybar,compton,st(simple terminal),rofi,zsh&[ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
-    - 还怪好看的,通过ln -s将文件链接到 ~/.config/zsh/再进行备份
-- zsh辅助使用插件，[autojump](https://github.com/wting/autojump) 
+### update
+
+现在使用 macos（macmini）系统了,
+
+用于备份 macos 上常用的软件、配置，
+
+**或许不常更新，但是会很重要**
 
 # WHY
 
-- It's convenience for me to check these later. And this template env is my prefer,the later changes will base on this.
-- 方便之后查阅。并且这是我比较喜欢的一个模板环境，而且之后都会以此为基础进行更改
+方便之后查阅。并且这是我常用的一个模板环境，而且之后都会以此为基础进行更改
 
-# HOW 
+# HOW
 
-- This repo is backed up using shallow-backup,and most of it's files are conf for reference.  
-- 此仓库是使用[shallow-backup](https://github.com/alichtman/shallow-backup)备份的，仓库内文件大部分为配置文件，可供参考
-- `backup-dots -m  "add i3+polybar+compton"`,also you can `shallow-backup --help` to find other instructions
-  - of course, can change the script `backup-dots` in ~/.bashrc
-  - `shallow-backup -show`  分析下backup-dots，~~相当于先shallow-backup 再git push上去。可以用lazygit 来做~~
-  - ~~shallow-backup只是备份功能~~
+~~此仓库是使用[shallow-backup](https://github.com/alichtman/shallow-backup)备份的，仓库内文件大部分为配置文件，可供参考~~
 
-- `/usr/bin/compton --config ~/.config/compton.conf` 指定配置文件，在is/config里有
+~~`backup-dots -m  "add i3+polybar+compton"`,also you can `shallow-backup --help` to find other instructions~~
 
----
+~~- of course, can change the script `backup-dots` in ~/.bashrc~~
+
+~~- `shallow-backup -show`  分析下backup-dots，~~相当于先shallow-backup 再git push上去。可以用lazygit 来做~~~~
+
+- ~~shallow-backup只是备份功能~~
+
+~~- `/usr/bin/compton --config ~/.config/compton.conf` 指定配置文件，在i3/config里有~~
 
 # Q&A
 
@@ -58,7 +58,6 @@ client_loop: send disconnect: Broken pipe
   Hi liuzel01! You've successfully authenticated, but GitHub does not provide shell access.
   ```
   
-
 2. **问题描述：**
 
 - ArchLinux 使用终端st时，无法使用Delete键位删除字符
@@ -66,11 +65,13 @@ client_loop: send disconnect: Broken pipe
 - **解决办法：**
 
   - `sudo vim /etc/inputrc` ，在$endif之上添加内容
+
   ```shell
   #for delete 
   #"\e[P": delete-char
   set enable-keypad on 
   ```
+
   - 或是修改 ~/.zshrc 的配置，如下
 - **相关参考：**
 
@@ -80,5 +81,5 @@ client_loop: send disconnect: Broken pipe
    - archlinux使用polybar时，图标Font Awesome一直无法显示。偶然间，在[polybar-issue](https://github.com/polybar/polybar/issues/924)发现线索了
    - `fc-list | grep -i awesome`   查看支持的字体  
    - ~/.config/polybar/config  大约在67行，继续进行修改 。
-   -  大致修改了下可用的图标，之前的xwindows图标换成了forg，各个ws-icon也更换了（时间那里，鼠标点击可以显示日期）
+   - 大致修改了下可用的图标，之前的xwindows图标换成了forg，各个ws-icon也更换了（时间那里，鼠标点击可以显示日期）
    ![](https://cdn.jsdelivr.net/gh/liuzel01/MyPicBed@master/data/20200604230531.png)
